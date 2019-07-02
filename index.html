@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+
+    
+    <head>    
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <script src="javascript.js" > </script> 
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/bigBalloon.png">
+        <title> DOTS AND BOXES </title>
+    </head>
+    
+    
+    <body>
+        
+        <!-- TOP BAR AND MENU USER -->
+        <div id="topBar">
+            <div id="myAccountButton">
+                <p id="myAccountText" class="center">MyAccount &dtrif;</p>
+            </div>
+            <div id="goBackButton">
+                <p class="center">&xlArr; GoBack</p>
+            </div>
+        </div>
+        
+        <div id="menuUser"> 
+             <div id="left">
+                <div id="profilePicture"> </div>
+                <div id="userName"> </div>
+            </div>
+            <div id="rigth">
+                <input id="settingsButton" type="button">
+                <input id="logoutButton" type="button" value="log out">
+            </div>
+        </div>
+
+        <div id="divSpace">
+           
+        </div>
+        
+        <div id="total"> 
+        </div>
+
+        <div id="window">
+            <div id="bar">
+                <div id="titleWindow">SETTINGS</div>
+                <div id="closeWindow"></div>
+            </div>
+            <div id="body"> </div>
+        </div>
+        
+        <div id="loading"> </div>
+        
+        
+        <!-- - - - - - - - - - - - - - - - - - -->
+        
+        
+        <div id="header">
+            <div id="title"> 
+                <p class="center">DOTS AND BOXES</p> 
+            </div>            
+        </div>
+        
+        <div id="waitingForOpponent"> 
+            <div id="divLeave">
+                <input id="leave" type="button" value="leave">
+            </div>
+            <div id="all"></div>
+        </div>  
+
+        <div id="content">
+            
+            <div id="loginArea" > 
+                
+                
+
+			         <input id="username" type="text" placeholder="User" autofocus="true">
+			         <input id="password" type="password" placeholder="Password">
+                     <input id="loginButton" type="submit" value="login">
+                    
+                
+
+                     <input id="offlineButton" type="button" value="play offline">
+                    
+                     <div id="howToPlay">
+                         <p class="center">How To Play?</p>
+                     </div>
+                     <div id="rules">
+                         <p class ="center">Players take turns joining two horizontally or vertically adjacent dots by a line. <br> A player that completes the fourth side of a square, a box, colors that box and must play again. <br> When all boxes have been colored, the game ends and the player who has colored more boxes wins. If the player completed the same number of boxes wins who spent less time.</p>
+                     </div>
+	        </div>
+        
+            <div id="selectArea">
+                    <div id="selectLevel">
+                         <input class="levelButton" id="beginner" type="button" value="beginner">
+			             <input class="levelButton" id="intermediate" type="button" value="intermediate">
+			             <input class="levelButton" id="advanced" type="button" value="advanced">
+                         <input class="levelButton" id="expert" type="button" value="expert">
+                    </div>
+                    
+                    <div id="selectMode">
+                        <div id="singleplayer"> <p class="center">single<br>player</p> </div>
+                        <div id="multiplayer"> <p class="center">multi<br>player</p> </div>
+                        <div id="selectAgain"> <p class="center">&xlArr; select another dificulty</p> </div>
+                    </div>
+                
+                
+                    <div id="highScores">
+                        <div id="buttonsHS">
+                             <input class="HSButton" id="beginnerHS" type="button" value="beginner">
+			                 <input class="HSButton" id="intermediateHS" type="button" value="intermediate">
+			                 <input class="HSButton" id="advancedHS" type="button" value="advanced">
+                             <input class="HSButton" id="expertHS" type="button" value="expert">        
+                        </div>                        
+                        
+                        <div id='infoHS'>
+                            <div id="titleHSDiv"> 
+                                <p id="titleHS" class="center"> </p>
+                            </div>
+                            <div id="namesColumns">
+                                <div id="boxesHS">Boxes</div>
+                                <div id="timeHS">Time</div>
+                            </div>
+                            <table id="boardHS"> </table>
+                        </div>
+                    </div>
+                    
+                    <div id="highScoresButton"> </div> 
+
+                
+            </div>
+            
+            
+            <div id="gameArea">    
+                
+                <div id="gameInfo">
+                    <div id="progress">
+                        <div id="names">
+                            <div id="opponentID" class="center"> </div> 
+                            
+                        </div>
+                        <div id="timer">
+                            <div id="opponentTime"> 
+                                <p id="opponentSeconds" class="center">00</p>
+                            </div>
+                            
+                            <div id="clock"> </div>
+                            <div id="userTime"> 
+                                <p id="userSeconds" class="center">00</p>
+                            </div>                            
+                        </div>
+                         
+                        <div id ="points">
+                            <div id="pcPoints"> </div>
+                            <div id="pointsImg"> </div>
+                            <div id="userPoints"> </div>
+                        </div>
+                    </div>
+                    <div id="gameButtons">
+                        <div id="quitButton"> </div>
+                        <div id="reStartButton"></div>
+                    </div>
+                </div>
+                
+                <div id="boardArea">
+                    <div id="boxMessage">
+                        <p id="message" class="center">RESULTADO</p>
+                    </div>
+                    <table id="board"> </table>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <canvas id="canvas"></canvas>
+        
+        <div id="bigBalloon"></div>
+        
+        <div id="smallBalloon"></div>
+
+        <footer id="footer">
+            <p class="autor">2016, Andr&eacute; Couto Meira &#38; Miguel Ribeiro Correia</p>
+        </footer>
+    </body>
+</html>

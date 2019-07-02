@@ -1,0 +1,1109 @@
+html{
+    margin: auto;
+    height:100%;
+    width: 100%;
+    background-color: beige;
+}
+
+
+
+/*************************************
+**********TOP BAR & MENU USER*********
+**************************************/
+
+
+
+/*TOP BAR*/
+
+#topBar{
+    width: 100%;
+    height: 50px;
+
+    
+    position: fixed;
+    display: none;
+    z-index: 200;
+
+    top: 0;
+    left: 0;
+
+    background-color: deepskyblue;
+    border: none;
+}
+
+#myAccountButton, #goBackButton{
+    width: 135px;
+    height: 100%;
+
+    display: table;
+    position: absolute;
+
+    bottom: 0px;
+    right: 10%;
+
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+#myAccountButton:hover, #goBackButton:hover{
+    color: gray;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+/*MENU USER*/
+
+#divSpace{
+    width: 100%;
+    height: 75px;
+    margin: 50px 0px -50px 0;
+    
+    display: none;
+    position: relative;
+    z-index: 150;
+}
+
+#menuUser{
+    width: 100%;
+    height: 75px;
+    
+    display: none;
+    position: fixed;
+    z-index: 200;
+    
+    left: 0;
+    top:50px;
+    
+    background-color: gray;
+}
+
+#left{
+    width: auto;
+    height: 75px;
+
+    display: inline-block;
+    position: absolute;    
+    float: left;
+    
+    left: 10%;
+    top: 0px;
+}
+
+#rigth{
+    width: 135px;
+    height: 30px;
+
+    display: inline-block;
+    position: absolute;    
+    float: right;
+    
+    right: 10%;
+    bottom: 5px;
+}
+
+#profilePicture{
+    width: 75px;
+    height: 75px;
+
+    display: inline-block;
+    float: left;
+
+    background: url("img/face.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: darkgray;
+}
+
+#userName{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    
+    display: inline-block;
+    float: left;
+
+    color: white;
+    font-size: 15px;
+    font-family: 'Courier New';
+}
+
+#settingsButton{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+
+    display: inline-block;
+    float: left;
+    
+    border: none;
+    
+    background: url("img/settings.png");
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logoutButton{
+    width: 100px;
+    height: 30px;
+
+    display: inline-block;
+    float: left;
+
+    border: none;
+    background-color: white;
+    
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Courier New';
+}
+
+#logoutButton:hover, #settingsButton:hover{
+    cursor: pointer;
+}
+
+/*SETTINGS WINDOW*/
+
+#total{
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    position: fixed;
+    z-index: 300;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: white;
+    opacity: 0.7;
+}
+
+#window{
+    width: 250px;
+    height: 100%;
+    
+    display: none;
+    position: fixed;
+    z-index: 400;
+    
+    top:125px;
+    right:10%;
+}
+
+#bar{
+    width: 100%;
+    height: 25px;
+
+    display: block;
+    position: relative;
+
+    border: none;
+    background-color: deepskyblue;
+}
+
+#titleWindow{
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    display: inline-block;
+    float: left;
+
+    color: white;
+    font-family: 'Courier New';
+}
+
+#closeWindow{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+
+    display: inline-block;
+    float: right;
+        
+    background: url("img/close.png");
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+#body{
+    width: auto;
+    height: 500px;
+
+    display: block;
+    
+    border-left: 5px solid deepskyblue;
+    border-right: 5px solid deepskyblue;
+    border-bottom: 5px solid deepskyblue;
+    background-color: white;
+}
+
+
+
+/*************************
+**********HEADER**********
+**************************/
+
+
+
+#header{
+    width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
+    padding: 25px 0;
+
+    display: inline-block;
+    position: relative;
+    z-index: 100;    
+}
+
+#title{
+    width: 50%;
+    height: 150px;
+    min-width: 200px;
+    margin: auto;
+
+    display: table;
+    clear: both;
+    
+    border: 1px solid deepskyblue;
+    background-color: white;    
+    
+    font-family: 'Courier New';
+    text-align: center;
+    font-size: 38px;
+    color: deepskyblue;
+}
+
+p.center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/****************************
+**********LOGIN AREA*********
+*****************************/
+
+
+
+#loginArea{
+    width: 100%;
+    height: auto;    
+    padding: 25px 0;
+    
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+#username, #password{
+    width: 200px;
+    height: 20px;
+    margin: 25px auto;
+
+    display: block;
+    
+    border: 1.5px solid deepskyblue;
+    
+    font-size: 15px;        
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+#loginButton {
+    width: 200px;
+    height: 30px;
+    margin: 25px auto;
+    padding: 0 25px;
+
+    display: block;
+
+    border: 2px solid white;
+    
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New';
+    color: white;
+    background-color: deepskyblue;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+#offlineButton {
+    width: 200px;
+    height: 30px;
+    margin: 25px auto;
+    padding: 0 25px;
+
+    display: block;
+
+    border: 2px solid white;
+    background-color: lightgrey;
+    
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New';
+    color: white;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+#loginButton:hover, #offlineButton:hover {    
+    border: 2px solid deepskyblue;
+    background-color: white;
+    color: deepskyblue;
+}
+
+#howToPlay{
+    width: 50%;
+    height: 50px;
+    min-width: 200px;
+    margin: auto;
+    
+    display: table; 
+
+    background-color: gray;
+    border: 2px solid white;
+
+    font-family: 'Courier New';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    
+    cursor: help;
+}
+
+#rules{
+    width:50%;
+    height: 50px;
+    min-width: 200px;
+    margin: -2px auto;
+
+    display: none;
+
+    background-color: gray;
+    border: 2px solid white;
+    border-top: none; 
+    
+    color: white;
+    font-family: 'Courier New';
+    font-size: 15px;
+    text-align: center;
+    
+    cursor: help;
+}
+
+
+
+/******************************
+**********SELECT AREA**********
+*******************************/
+
+
+
+#selectArea{
+    width: 100%;
+    height: 300px;
+
+    display: none;
+    position: relative;
+    z-index: 100;    
+}
+
+#selectLevel,#selectMode{
+    width: 50%;
+    min-width: 200px;
+    height: 200px; 
+    margin: auto;
+
+    display: block;    
+    position: relative;
+    z-index: 50;
+        
+    border-top: 1px solid deepskyblue;
+    border-bottom: 1px solid deepskyblue;
+}
+
+/*SELECT LEVEL*/
+
+#beginner, #intermediate, #advanced, #expert {
+    width: 100%;
+    height: 50px;
+
+    display: block;
+
+    border: none;
+    background-color: deepskyblue;
+    
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+    font-family: 'Courier New';
+}
+
+#beginner:hover, #intermediate:hover, #advanced:hover, #expert:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/*SELECT MODE*/
+
+#singleplayer, #multiplayer{
+    width: 50%;
+    height: 160px;
+    
+    display: table;
+    float: left;
+    
+    background-color: deepskyblue;
+    
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px; 
+    font-family: 'Courier New';
+    cursor: pointer;    
+}
+
+
+#singleplayer:hover, #selectAgain:hover, #multiplayer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#selectAgain{
+    width: 100%;
+    height: 40px;
+
+    display: table;
+    float: left;
+    
+    background-color: deepskyblue;
+    
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 15px; 
+    font-family: 'Courier New';
+}
+
+
+
+/******************************
+**********HIGH SCORES**********
+*******************************/
+
+
+
+#highScoresButton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 150;
+    
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+
+    background: url("img/highscores.png");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    
+    border: 2px solid white;
+
+    font-family: 'Courier New';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+#highScoresButton:hover{
+    border: 2px solid goldenrod;
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+}
+
+#highScores{
+    width: 50%;
+    min-width: 350px;
+    height: 475px;
+    
+    display: none;
+    position: absolute;
+    z-index: 100;
+
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+
+    border: 2px solid goldenrod;    
+    background: gray;
+}
+
+#buttonsHS{
+    width: 200px;
+    height: 200px; 
+    
+    position: absolute;
+    display: block;   
+    
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-bottom: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#beginnerHS, #intermediateHS, #advancedHS, #expertHS {
+    width: 100%;
+    height: 25%;
+
+    display: block;
+    background-color: gray;
+    border: none;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: goldenrod;
+    font-size: 20px; 
+    font-family: 'Courier New';
+}
+
+#beginnerHS:hover, #intermediateHS:hover, #advancedHS:hover, #expertHS:hover {
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+}
+
+#infoHS{
+    width: 100%;
+    height: 100%;
+}
+
+#titleHSDiv{
+    width: auto;
+    height: 50px;
+    margin: 25px auto;
+    padding: 0 15px;
+
+    display: table;
+
+    border-bottom: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;
+    
+    text-transform: uppercase;
+    text-align: center;
+    color: goldenrod;
+    font-size: 20px; 
+    font-family: 'Courier New';
+}
+
+#titleHSDiv:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#namesColumns{
+    width: 350px;
+    height: 25px;
+    margin: 0 auto 25px auto;
+
+    position: relative;
+    
+    border-bottom: 1px solid white;
+    
+    color: goldenrod;
+    font-size: 15px; 
+    font-family: 'Courier New';
+}
+
+#boxesHS{
+    width: 60px;
+    height: 100%;
+    
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+
+    text-align: center;
+}
+
+#timeHS{
+    width: 90px;
+    height: 100%;
+    
+    display: inline-block;    
+    position: absolute;
+    right: 0;    
+    
+    text-align: center;
+}
+
+#boxesHS:hover, #timeHS:hover{
+    font-size: 25px;
+}
+
+#boardHS{
+    display: table;
+    margin: 0 auto;
+    height: 250px;
+    font-size: 18px;    
+    font-family: 'Courier New';
+}
+
+.namesHS{
+    width: 200px;
+    height: auto;
+    
+    color: white;
+    text-align: left;
+    border: none;
+}
+
+.boxesHS{
+    width: 60px;
+    height: auto;
+
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.timeHS{
+    width: 90px;
+    height: auto;
+    
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+
+
+/***************************
+*********GAME AREA**********
+****************************/
+
+
+
+#gameArea{
+    width: 100%;
+    height: auto;
+    
+    display: none;
+    position: relative;
+    z-index: 100;
+
+    font-family: 'Courier New';
+}
+
+#gameInfo{
+    /*width: javascript;*/
+    height: 125px;
+    min-width: 250px;
+    margin: 25px auto;
+
+    display: block;
+
+    background-color: white;
+    border: 2px solid deepskyblue;
+}
+
+#progress{
+    width: 70%;
+    height: 100%;
+
+    display: inline-block;
+    float: left;
+}
+
+#gameButtons
+{
+    width: 30%;
+    height: 100%;
+
+    display: inline-block;
+    float: left;
+}
+
+#timer{
+    width: 100%;
+    height: 50px;
+
+    display: block; 
+    vertical-align:middle;
+    float: left;
+    color: deepskyblue;
+    font-size: 48px;
+}
+
+#names{
+    width: 100%;
+    height: 25px;
+    position: relative;
+    
+    display: block; 
+    vertical-align:middle;
+    float: left;
+    font-size: 48px;
+}
+
+#opponentID{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: table;
+    left: 0;
+    color: coral;
+    text-align: center;
+    font-size: 20px;
+}
+
+#opponentTime{
+    width: 35%;
+    height: 50px;
+
+    display: table;
+    float: left;
+
+    text-align: right;
+    font-size: 25px;
+}
+
+#clock{
+    width: 30%;
+    height: 50px;
+
+    display: block;
+    float: left;
+    
+    background: url('img/chrono.png');
+    background-size: 45px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#userTime{
+    width: 35%;
+    height: 50px;
+
+    display: table;
+    float: left;
+    
+    text-align: left;
+    font-size: 25px;
+}
+
+#points{
+    width: 100%;
+    height: 50px;
+
+    display: block;
+    float: left;
+    font-size: 45px;
+}
+
+#pcPoints{
+    width: 50%;
+    height: 50px;
+
+    display: inline-block;
+    float: left;
+
+    color: coral;  
+    text-align: center;
+}
+
+#userPoints{
+    width: 50%;
+    height: 50px;
+
+    display: inline-block;
+    float: left;
+
+    color: lightgreen;
+    text-align: center;
+}
+
+#quitButton{
+    width: 100%;
+    height: 75 px;
+    
+    display: inline-block;
+    float: left;
+
+    background: url("img/quit.png");
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#reStartButton{
+    width: 100%;
+    height: 50px; 
+    
+    display: inline-block;
+    float: left;
+    
+    background: url("img/restart.png");
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+#reStartButton:hover{
+    background-color: gray;
+    color: gray;
+}
+
+#board{
+    min-width: 300px;
+    min-height: 200px;
+    margin: 25px auto;
+
+    background-color: gray;
+}
+
+.dots{
+    width: 4px;
+    height: 4px;
+    min-width: 4px;
+    min-height: 4px;
+
+    background-color: black;
+    border: none;
+}
+
+.lines{
+    background-color: white;
+}
+
+.lines:hover
+{
+    background-color: lightgreen;
+}
+
+.squares{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+
+    background-color: lightgray;
+}
+
+.square_1{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    
+    background-color: lightgreen;
+}
+
+.square_2{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+
+    background-color: coral;
+}
+
+.active_1 {
+    background-color: lightgreen;
+}
+
+.active_2 {
+    background-color: coral;
+}
+
+#loading{
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    
+    background: url('img/loading.gif');
+    background-size: 320px 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-color: black;
+    opacity: 0.2;
+}
+
+#waitingForOpponent{
+    width: 100%;
+    height: auto;
+    display: none;
+    position: relative;
+}
+
+#divLeave{
+    width: 320px;    
+    height: 320px;
+
+    z-index: 100;
+    position: relative;
+    margin: auto;
+    background: url('img/loading.gif');
+    background-size: 320px 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#all{
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: -300;
+    background-color: black;
+    opacity: 0.6;
+}
+
+#leave{
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    
+    border-radius: 50%;
+    border: 2px solid orangered;
+    font-family: 'Courier New';
+    font-size: 20px;
+    color: orangered;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#leave:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+#boxMessage{
+    /*widt: javascript;*/
+    height: 50px;
+    min-width: 300px;
+    
+    display: none;
+    margin: auto;
+
+    font-family: 'Courier New';
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*************************
+**********FOOTER*********
+**************************/
+
+#canvas{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+#bigBalloon{
+    width: 105px;
+    height: 140px;
+    
+    position: fixed;
+    left: 15%;
+    bottom: 80px;
+    z-index: -200;
+    background: url('img/bigBalloon.png');      
+    background-size: 105px 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#smallBalloon{
+    width: 40px;
+    height: 55px;
+    
+    position: fixed;
+    right: 25%;
+    bottom: 100px;
+    z-index: -200;
+
+    background: url('img/smallBalloon.png');      
+    background-size: 40px 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    
+    position: fixed;
+    display: table;
+
+    opacity: 0.5;
+    
+    left: 0;
+    bottom: 0;
+    
+    text-align: center;
+}
+
+p.autor{
+    width: 100%;
+    height: auto;
+    
+    display: block;
+    position: absolute;
+    
+    margin: 0;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New';
+
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
