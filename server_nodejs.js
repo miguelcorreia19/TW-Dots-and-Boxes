@@ -33,9 +33,9 @@ event.use(bodyParser.urlencoded({extended: true}));
 var connection = mysql.createConnection(
 {
     host     : 'localhost', // MySQL Host
-    user     : 'up201405219', // MySQL User
-    password : '36Grupo', // MySQL Password
-    database : 'up201405219' // MySQL Databse
+    user     : 'user', // MySQL User
+    password : 'password', // MySQL Password
+    database : 'database' // MySQL Databse
 });
  
 // Mysql errors
